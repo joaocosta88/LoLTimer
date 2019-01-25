@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">LoLTimer</string>
+    <string name="action_settings">Settings</string>
+    <string name="buffs">Buffs</string>
+    <string name="wards">Wards</string>
+    <string name="ultimates">Ultimates</string>
+    <string name="your_jungle">Your jungle</string>
+    <string name="enemy_jungle">Enemie\'s jungle</string>
+    <string name="global_buffs">Global buffs</string>
+
+</resources>

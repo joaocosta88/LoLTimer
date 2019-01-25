@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/your_jungle_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/your_jungle"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/e_jungle_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/enemy_jungle"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ImageView
+        android:id="@+id/drake"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/baron"
+        android:layout_alignLeft="@+id/e_blue"
+        android:contentDescription="drake"
+        android:src="@drawable/dragon_square" />
+
+    <ImageView
+        android:id="@+id/my_red"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/e_jungle_tv"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="your red buff"
+        android:src="@drawable/ancient_golem" />
+
+    <ImageView
+        android:id="@+id/e_red"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/my_red"
+        android:layout_marginLeft="20dp"
+        android:contentDescription="enemie&apos;s red buff"
+        android:src="@drawable/ancient_golem" />
+
+    <ImageView
+        android:id="@+id/my_blue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/e_blue"
+        android:layout_marginLeft="20dp"
+        android:contentDescription="your blue buff"
+        android:src="@drawable/lizard_elder" />
+    
+     <ImageView
+        android:id="@+id/e_blue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/my_red"
+        android:layout_marginTop="26dp"
+        android:layout_toRightOf="@+id/global_tv"
+        android:contentDescription="enemie&apos;s blue buff"
+        android:src="@drawable/lizard_elder" />
+
+    <ImageView
+        android:id="@+id/baron"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/my_blue"
+        android:layout_below="@+id/global_tv"
+        android:layout_marginTop="27dp"
+        android:contentDescription="baron"
+        android:src="@drawable/baron_nashor" />
+    
+
+    <TextView
+        android:id="@+id/global_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/my_blue"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:text="@string/global_buffs"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/tv_e_red"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/e_red"
+        android:layout_alignLeft="@+id/e_red"
+        android:layout_alignRight="@+id/e_red"
+        android:layout_alignTop="@+id/e_red"
+        android:background="#AAA1A1A1"
+        android:gravity="center_horizontal|bottom"
+        android:text=""
+        android:visibility="gone"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/tv_my_red"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/my_red"
+        android:layout_alignLeft="@+id/my_red"
+        android:layout_alignRight="@+id/my_red"
+        android:layout_alignTop="@+id/my_red"
+        android:background="#AAA1A1A1"
+        android:gravity="center_horizontal|bottom"
+        android:text=""
+        android:visibility="gone"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/tv_e_blue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/e_blue"
+        android:layout_alignBottom="@+id/e_blue"
+        android:layout_alignRight="@+id/e_blue"
+        android:layout_alignTop="@+id/e_blue"
+        android:background="#AAA1A1A1"
+        android:gravity="center_horizontal|bottom"
+        android:text=""
+        android:visibility="gone"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/tv_my_blue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/my_blue"
+        android:layout_alignLeft="@+id/my_blue"
+        android:layout_alignRight="@+id/my_blue"
+        android:layout_alignTop="@+id/my_blue"
+        android:background="#AAA1A1A1"
+        android:gravity="center_horizontal|bottom"
+        android:text=""
+        android:visibility="gone"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/tv_drake"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/drake"
+        android:layout_alignRight="@+id/drake"
+        android:layout_alignLeft="@+id/drake"
+        android:layout_alignTop="@+id/drake"
+        android:background="#AAA1A1A1"
+        android:gravity="center_horizontal|bottom"
+        android:text=""
+        android:visibility="gone"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/tv_baron"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/baron"
+        android:layout_alignLeft="@+id/baron"
+        android:layout_alignRight="@+id/baron"
+        android:layout_alignTop="@+id/baron"
+        android:background="#AAA1A1A1"
+        android:gravity="center_horizontal|bottom"
+        android:text=""
+        android:visibility="gone"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+   
+</RelativeLayout>
